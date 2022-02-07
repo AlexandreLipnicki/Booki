@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    font-family: "Raleway";
+    scroll-behavior: smooth;
+}
+@font-face {font-family: "Raleway" ; src: url("/font/static/Raleway-Medium.ttf");}
+header, main{
+    max-width: 1600px;
+    margin: auto
+}
+@media screen and (max-width: 500px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .NavLink{
+        border-bottom: 3px solid #F2F2F2;
+        border-top: none;
+        height: 60px;
+    }
+    .NavLink:hover{
+        border-bottom: 3px solid #0065FC;
+    }
+    .switchicon{
+        display:block;
+    }
+    .switchtext{
+        display:none;
+    }
+    .logo{
+        max-width: 130px;
+        align-self: center;
+        height: 100%;
+    }
+    .filter{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .filterslot{
+        padding: 0px 10px 0px 0px;
+    }
+    #hebergement{
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .populaire{
+        margin-top: 20px;
+    }
+    .hebpop{
+        flex-direction: column-reverse;
+    }
+    .infodiv{
+        align-items: center;
+    }
+    .actimg1{
+        object-fit: cover;
+        height: 150px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .actimg2{
+        object-fit: cover;
+        height: 150px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .allact{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .act{
+        width: 100%;
+    }
+    .actifig{
+        margin:10px 0;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footdiv{
+        align-items: center;
+        padding: 10px 0;
+    }
+    .popcaption{
+        width: 40%;
+    }
+    .popimg{
+        border-radius: 15px 0 0 15px;
+        width: 60%;
+        object-fit: cover;
+        height: 120px;
+    }
+    .pop{
+        margin:10px;
+    }
+    .heb{
+        height: 200px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 501px) and (max-width: 767px){
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .NavLink{
+        border-bottom: 3px solid #F2F2F2;
+        border-top: none;
+        height: 60px;
+    }
+    .NavLink:hover{
+        border-bottom: 3px solid #0065FC;
+    }
+    .switchicon{
+        display:block;
+    }
+    .switchtext{
+        display:none;
+    }
+    .logo{
+        max-width: 130px;
+        align-self: center;
+        height: 100%;
+    }
+    .filter{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    .filterslot{
+        padding: 0px 10px 0px 0px;
+    }
+    #hebergement{
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .populaire{
+        margin-top: 20px;
+    }
+    .heb{
+        width: 40%;
+        height: 200px;
+    }
+    .hebpop{
+        flex-direction: column-reverse;
+    }
+    .infodiv{
+        align-items: center;
+    }
+    .actimg1{
+        object-fit: cover;
+        height: 380px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .actimg2{
+        object-fit: cover;
+        height: 150px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .allact{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 10px;
+        width: 100%;
+    }
+    .act{
+        width: 45%;
+    }
+    .actifig{
+        margin:10px 0;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footdiv{
+        align-items: center;
+        padding: 10px 0;
+    }
+    .pop{
+        margin: 10px 20px;
+        height: 150px;
+    }
+    .popimg{
+        border-radius: 15px 0 0 15px;
+        object-fit: cover;
+        height: 100%;
+        width: 60%;
+    }
+    .allpop{
+        display: flex;
+        flex-direction: column;
+    }
+    .hebimg{
+        min-height: 65%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    header{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .NavLink:hover{
+        border-top: 3px solid #0065FC;
+    }
+    .searchbutton i{
+        display: none;
+    }
+    .switchtext{
+        display: block;
+    }
+    .logo{
+        height: 100%;
+    }
+    .infodiv{
+        align-items: center;
+    }
+    .filter{
+        justify-content: flex-start;
+    }
+    .filterslot{
+        padding: 0px 10px 0px 0px;
+    }
+    #hebergement{
+        border-radius: 30px;
+        margin: 0 20px;
+    }
+    .heb{
+        width: 27%;
+    }
+    .hebimg{
+        height: 150px;
+        min-height: 65%;
+    }
+    .populaire{
+        margin-right: 20px;
+        border-radius: 30px;
+        margin: 20px;
+    }
+    .actimg1{
+        object-fit: cover;
+        height: 400px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .actimg2{
+        object-fit: cover;
+        height: 150px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .allact{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 10px;
+        width: 100%;
+    }
+    .act{
+        width: 45%;
+        margin: 15px;
+    }
+    .hebpop{
+        flex-direction: column-reverse;
+    }
+    .pop{
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+    }
+    .popimg{
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+        height: 140px;
+        width: 100%;
+    }
+    .allpop{
+        display: flex;
+        margin:10px;
+    }
+    .popcaption{
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 992px) {
+    header{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .NavLink:hover{
+        border-top: 3px solid #0065FC;
+    }
+    .searchbutton i{
+        display: none;
+    }
+    .switchtext{
+        display: block;
+    }
+    .logo{
+        height: 100%;
+    }
+    .infodiv{
+        align-items: center;
+    }
+    .filter{
+        justify-content: flex-start;
+    }
+    .filterslot{
+        padding: 0px 10px 0px 0px;
+    }
+    #hebergement{
+        border-radius: 30px;
+        margin: 0 20px;
+        width: 65%;
+    }
+    .heb{
+        width: 27%;
+    }
+    .populaire{
+        margin-right: 20px;
+        width: 35%;
+        border-radius: 30px;
+    }
+    .actimg1{
+        object-fit: cover;
+        height: 400px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .actimg2{
+        object-fit: cover;
+        height: 150px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .allact{
+        display:flex;
+        padding-top: 10px;
+    }
+    .act{
+        width: 25%;
+        margin: 15px;
+    }
+    .popimg{
+        border-radius: 15px 0 0 15px;
+        width: 45%;
+        object-fit: cover;
+        height: 120px;
+    }
+    .pop{
+        margin: 20px;
+    }
+    .poptext{
+        padding-left: 5px;
+    }
+    .hebimg{
+        height:120px;
+        min-height: 65%;
+    }
+    .footdiv{
+        max-width: 500px;
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.NavBar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+.NavLink{
+    height: 100%;
+    width: 100%;
+    padding: 0px 30px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+.NavLink:hover{
+    color: #0065FC;
+}
+.filtermenu{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.filtermenuhead{
+    padding-bottom: 20px;
+}
+.filtermenuhead h1{
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.filtermenuhead p{
+    font-size: 14px;
+}
+.search{
+    display:inline-flex;
+}
+.searchicon{
+    background-color: #F2F2F2;
+    padding: 12px 15px;
+    border-radius: 17px 0px 0px 17px;
+    font-size: 20px;
+}
+.searchbar{
+    padding: 0px 10px;
+    border-right: none;
+    border-left: none;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    font-weight: bold;
+    font-size: 15px;
+}
+.searchbutton{
+    background-color: #0065FC;
+    border: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 17px 17px 0;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.filter{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.allfilterslot{
+    display:flex;
+    flex-wrap: wrap;
+}
+.space{
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+.filterslot{
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #dddddd;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.filterslot:hover{
+    transform: scale(1.05);
+    background-color: #DEEBFF;
+}
+.filterslot:active{
+    background-color: #DEEBFF;
+}
+.filterslot:hover .filtericon{
+   background-color: transparent
+}
+.filtericon{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -2.5px;
+}
+
+.filtertext{
+    margin-left: 10px;
+}
+.infodiv{
+    display: flex;
+    margin: 20px 0px 20px;
+    font-size: 14px;
+}
+.infotext{
+    font-weight: normal;
+    margin-left: 10px;
+}
+.infoicon{
+    color: #0065FC;
+    border: 2px solid #0065FC;
+    border-radius: 100%;
+    min-width: 20px;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hebergement{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.281);
+}
+.hebheader, .poptitle, .popicon{
+    padding: 20px;
+    font-size: 20px;
+}
+.hebfooter{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.allheb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.heb{
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.281);
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+}
+.heb:hover, .pop:hover{
+    transform: scale(1.05);
+}
+.hebimg{
+    border-radius: 15px 15px 0 0;
+    max-height: 65%;
+    object-fit: cover;
+}
+.ystar{
+    color: #0065FC;
+}
+.nstar{
+    color: #c8c7c7;
+}
+.populaire{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.281);
+}
+.heb h3,.heb p, .pop h3, .pop p{
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.hebpop{
+    display:flex;
+}
+.allhebicon, .allpopicon{
+    padding-left: 5px;
+    font-size: 10px;
+    padding-top: 5px;
+}
+.popheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pop{
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.281);
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px;
+    object-fit: cover;
+    display: flex;
+}
+#activité{
+    padding: 20px;
+}
+.act{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.actifig{
+    transition: 0.3s;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.281);
+}
+.actifig:hover{
+    transform: scale(1.05);
+}
+.actifigcap{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.footer{
+    background-color: #F2F2F2;
+    padding: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer h1, footer a{
+    font-size: 15px;
+    margin: 10px;
+}
+.footdiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#activité h2{
+    margin-left: 20px;
+}
+.hebtext{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.popcaption{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+footer h2{
+    padding-bottom: 5px;
+}
